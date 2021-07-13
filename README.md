@@ -17,3 +17,8 @@ To improve code ability and thinking ability
 
 1. 加上了webpack
 2. 具体参考 Trie/index.js
+
+### 参考资料
+
+1.  https://github.com/XPoet/js-data-structures-and-algorithms
+> 通过js去写了很多数据结构和思想，并且有大量的练习，可以参考下
