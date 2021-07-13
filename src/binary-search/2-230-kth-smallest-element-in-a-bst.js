@@ -35,3 +35,7 @@ function kthSmallest (root, k) {
   inOrderTraverseNode(root)
   return res
 }
+
+console.log(111)
+
+export default kthSmallest
