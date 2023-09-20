@@ -27,8 +27,15 @@ class Plugin {
             }
         }
 
-        // 功能完成后调用 webpack 提供的回调
-        callback()
+        // 再执行一些异步操作
+        setTimeout(function() {
+          console.log('异步任务完成....')
+          // 功能完成后调用 webpack 提供的回调
+          callback()
+        }, 3000)
+
+        // // 功能完成后调用 webpack 提供的回调
+        // callback()
       }
     );
   }
