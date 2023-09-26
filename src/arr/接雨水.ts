@@ -1,8 +1,8 @@
 // 给定[0,1,0,2,1,0,1,3,2,1,2,1] 
 
 function rain(height) {
-  let left = 0, right = height.length - 1
-  let res = 0, leftMax = 0, rightMax = 0
+  let left = 0, right = height.length - 1;
+  let leftMax = 0, rightMax = 0, res = 0;
   while(left < right) {
     leftMax = Math.max(leftMax, height[left])
     rightMax = Math.max(rightMax, height[right])
