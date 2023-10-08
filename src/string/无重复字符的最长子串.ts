@@ -1,11 +1,16 @@
+// 输入：abcabcbb
+// 输出：3 // 也就是 abc
+
 function lengthOfLongsSubstring(s) {
-  let myMap = new Map()
+  let map = new Map()
   let l = 0, r = 0, maxL = 0
   while(r < s.length) {
-    if(myMap.has(s[r])) {
-      l = l > myMap.get(s[r]) + 1 ? l : myMap.get(s[r]) + 1
+    let w = s[r]
+    if(map.has(w)) {
+      let i = map.get(w) + 1
+      l = l > i ? l : i
     }
-    myMap.set(s[r], r)
+    map.set(w, r)
     maxL = Math.max(maxL, r - l + 1)
     r++
   }
