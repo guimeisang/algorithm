@@ -8,6 +8,25 @@
  * @return {number}
  */
 var lengthOfLongestSubstring = function(s) {
+  // 再次做对
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 参考答案
+var lengthOfLongestSubstring = function(s) {
   let myMap = new Map()
   let l = 0, r = 0, maxl = 0
   while(r < s.length) {

@@ -6,6 +6,27 @@ promise.all的特点如下：
 4、只要有一个失败，状态就变成rejected，返回值将直接传递回调all()的返回值也是新的Promise对象
  * */ 
 
+_Promise.prototype.all = (promiseList) => {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // 假设已经实现了_Promise
 _Promise.prototype.all = (promiseList) => {
   return new _Promise((resolve, reject) => {
